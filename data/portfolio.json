@@ -1,0 +1,186 @@
+{
+    "CareerExperiences": [
+        {
+            "Name": "Rockstar Games",
+            "StartDate": "2022-10",
+            "CurrentJob": true,
+            "Projects": [],
+            "Description": "I currently work as a System's designer at Rockstar Games (North) based in Edinburgh, Scotland"
+        },
+        {
+            "Name": "StoryToys",
+            "StartDate": "2020-11",
+            "EndDate": "2022-10",
+            "CurrentJob": false,
+            "Projects": [
+                8,
+                6
+            ],
+            "Description": "StoryToys is a Dublin based company that develops games for Kids 7 and under, during my time there, I was primarily focused on the app Hungry Caterpillar Play School"
+        },
+        {
+            "Name": "Funkids",
+            "StartDate": "2019-06",
+            "EndDate": "2020-04",
+            "CurrentJob": false,
+            "Projects": [
+                4
+            ],
+            "Description": "Brazilian mobile app with small games and media content, developed plenty of features for the app"
+        },
+        {
+            "Name": "Avido",
+            "StartDate": "2016-05",
+            "EndDate": "2017-10",
+            "CurrentJob": false,
+            "Projects": [
+                3,
+                2
+            ],
+            "Description": "Brazilian startup that developed a few mobile games"
+        },
+        {
+            "Name": "Penguin Spot",
+            "StartDate": "2015-09",
+            "EndDate": "2016-05",
+            "CurrentJob": false,
+            "Projects": [
+                1
+            ],
+            "Description": "Internship at a small game company"
+        }
+    ],
+    "CareerProjects": [
+        {
+            "Id": 8,
+            "Name": "Hungry Caterpillar Play School",
+            "Date": "2020-11",
+            "Description": "iOS and Android game based on the famous Eric Carle character, Hungry Caterpillar, managed to develop a handful of new activities and many under the hood systems",
+            "Images": [],
+            "Videos": [
+                "https://youtu.be/v1wwVggxl7U"
+            ],
+            "Links": [
+                {
+                    "URL": "https://storytoys.com/apps/hungry-caterpillar-play-school/",
+                    "Description": "Project website"
+                }
+            ]
+        },
+        {
+            "Id": 7,
+            "Name": "Rust dungeon crawler game",
+            "Date": "2021-05",
+            "Description": "Small 2D roguelike game I made in the Rust programming language, based on a book",
+            "Images": [
+                "https://user-images.githubusercontent.com/8820360/171299363-15b04b53-c659-4f17-8f6c-a94d336c6cdd.png"
+            ],
+            "Videos": [],
+            "Links": [
+                {
+                    "URL": "https://github.com/BurningBlueFox/rust-dungeon-crawler",
+                    "Description": "Github repo"
+                }
+            ]
+        },
+        {
+            "Id": 6,
+            "Name": "Go directory file renaming CLI tool",
+            "Date": "2022-03",
+            "Description": "Small tool I developed while working at StoryToys to help with a small task where I need to change upper and lowercase from files with a certain extension",
+            "Images": [
+                "https://miro.medium.com/max/1400/1*SHJ4OBNuU-lbftY1hxypvA.webp"
+            ],
+            "Videos": [],
+            "Links": [
+                {
+                    "URL": "https://medium.com/@ThiagoLeao/file-type-changer-cli-tool-in-golang-1aab48e28b88",
+                    "Description": "Article about the tool on Medium"
+                },
+                {
+                    "URL": "https://github.com/BurningBlueFox/file-type-changer",
+                    "Description": "Github Repo"
+                }
+            ]
+        },
+        {
+            "Id": 5,
+            "Name": "Portfolio website backend (C++)",
+            "Date": "2022-12",
+            "Description": "Backend for my new updated portfolio website, the one you are currently looking at, written in a modern-ish C++, Drogon for web framework",
+            "Images": [
+                "https://avatars.githubusercontent.com/u/48876018?s=64&v=4"
+            ],
+            "Videos": [],
+            "Links": [
+                {
+                    "URL": "https://github.com/BurningBlueFox/Portfolio-Backend-CPP",
+                    "Description": "Github Repo"
+                }
+            ]
+        },
+        {
+            "Id": 4,
+            "Name": "Funkids",
+            "Date": "2019-06",
+            "Description": "Hybrid mobile game with video content that I developed some feature for",
+            "Images": [],
+            "Videos": [
+                "https://youtu.be/YDdxjNM2ehw",
+                "https://youtu.be/MpWL5JL208g",
+                "https://youtu.be/ileF1mAxD4E"
+            ],
+            "Links": []
+        },
+        {
+            "Id": 3,
+            "Name": "Make me Fat",
+            "Date": "2017-02",
+            "Description": "Second game developed at Avido",
+            "Images": [],
+            "Videos": [
+                "https://youtu.be/8iAkYIndD_4"
+            ],
+            "Links": []
+        },
+        {
+            "Id": 2,
+            "Name": "Shoot the Clown",
+            "Date": "2016-10",
+            "Description": "Mobile game developed at my first job",
+            "Images": [],
+            "Videos": [
+                "https://youtu.be/uoeQlJ2D4Ug"
+            ],
+            "Links": []
+        },
+        {
+            "Id": 1,
+            "Name": "Running knight",
+            "Date": "2015-10",
+            "Description": "Mobile 3D game based I've worked during my internship",
+            "Images": [],
+            "Videos": [
+                "https://youtu.be/XwdXnkKTacg"
+            ],
+            "Links": []
+        },
+        {
+            "Id": 0,
+            "Name": "Dreamland",
+            "Date": "2016-11",
+            "Description": "My Game design degree capstone project, 3D Adventure game for Windows",
+            "Images": [],
+            "Videos": [
+                "https://youtu.be/YjX0zQlbOo0",
+                "https://youtu.be/SEfu5boo-HI"
+            ],
+            "Links": [
+                {
+                    "URL": "https://www.mediafire.com/file/bkq98k6k1fr1ssu/Dreamland+Game.rar",
+                    "Description": "Download link for Windows"
+                }
+            ]
+        }
+    ]
+}
