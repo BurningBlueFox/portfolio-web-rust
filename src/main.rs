@@ -1,4 +1,4 @@
-use axum::{response::Html, routing::get, Json, Router};
+use axum::{routing::get, Json, Router};
 use std::net::SocketAddr;
 
 #[tokio::main]
