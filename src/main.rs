@@ -1,3 +1,5 @@
+mod data;
+
 use axum::{routing::get, Json, Router};
 use std::net::SocketAddr;
 
