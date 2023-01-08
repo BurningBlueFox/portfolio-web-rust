@@ -12,19 +12,19 @@ pub trait CareerExporter {
 }
 
 pub struct Project {
-    id: u32,
-    name: String,
-    date: String,
-    links: Vec<ExternalLink>,
+    pub id: u64,
+    pub name: String,
+    pub date: String,
+    pub links: Vec<ExternalLink>,
 }
 
 pub struct Experience<'a> {
-    name: String,
-    description: String,
-    start_date: String,
-    end_date: String,
-    current_job: bool,
-    projects: Vec<&'a Project>,
+    pub name: String,
+    pub description: String,
+    pub start_date: String,
+    pub end_date: String,
+    pub current_job: bool,
+    pub projects: Vec<&'a Project>,
 }
 
 pub enum ExternalLink {

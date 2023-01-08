@@ -2,9 +2,9 @@ use std::{fs::File, io::BufReader};
 
 use serde_json::Value;
 
-use crate::data::career::{Career, CareerImporter, Experience, Project};
+use crate::data::career::{Career, CareerImporter, Experience, ExternalLink, Project};
 
-use super::{KEY_CAREER_EXPERIENCE, KEY_CAREER_PROJECTS};
+use super::*;
 
 pub struct Importer {
     json_file_name: String,
@@ -27,13 +27,45 @@ impl Importer {
     }
 
     fn extract_projects(&self, value: &Value) -> Vec<Project> {
-        let projects: Vec<Project> = Vec::new();
+        let mut projects: Vec<Project> = Vec::new();
+
+        for item in value.as_array().unwrap() {
+            let proj = Project {
+                id: item[KEY_ID].as_u64().unwrap(),
+                name: item[KEY_NAME].to_string(),
+                date: item[KEY_PROJECT_DATE].to_string(),
+                links: self.extract_project_links(item),
+            };
+
+            projects.push(proj);
+        }
+
         return projects;
     }
 
     fn extract_experiences(&self, value: &Value, projects: &Vec<Project>) -> Vec<Experience> {
-        let experiences: Vec<Experience> = Vec::new();
+        let mut experiences: Vec<Experience> = Vec::new();
+
+        for item in value.as_array().unwrap() {
+            let exp = Experience {
+                name: todo!(),
+                description: todo!(),
+                start_date: todo!(),
+                end_date: todo!(),
+                current_job: todo!(),
+                projects: todo!(),
+            };
+
+            experiences.push(exp);
+        }
+
         return experiences;
+    }
+
+    fn extract_project_links(&self, item: &Value) -> Vec<ExternalLink> {
+        let mut links: Vec<ExternalLink> = Vec::new();
+
+        return links;
     }
 }
 
