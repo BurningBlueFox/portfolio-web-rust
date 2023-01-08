@@ -1,4 +1,3 @@
-mod data;
 use portfolio_web::run;
 
 #[tokio::main]

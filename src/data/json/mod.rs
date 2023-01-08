@@ -1,7 +1,7 @@
-mod importer;
 mod exporter;
+pub mod importer;
 
-const KEY_CAREER_PROJECTS: &str = "CareerProjects";
+pub const KEY_CAREER_PROJECTS: &str = "CareerProjects";
 const KEY_CAREER_EXPERIENCE: &str = "CareerExperiences";
 
 const KEY_PROJECT_DATE: &str = "Date";

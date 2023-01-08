@@ -1,2 +1,2 @@
 pub mod career;
-mod json;
+pub mod json;
