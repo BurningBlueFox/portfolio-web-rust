@@ -1,6 +1,6 @@
-pub struct Career<'a> {
+pub struct Career {
     pub projects: Vec<Project>,
-    pub experiences: Vec<Experience<'a>>,
+    pub experiences: Vec<Experience>,
 }
 
 pub trait CareerImporter {
@@ -18,13 +18,13 @@ pub struct Project {
     pub links: Vec<ExternalLink>,
 }
 
-pub struct Experience<'a> {
+pub struct Experience {
     pub name: String,
     pub description: String,
     pub start_date: String,
     pub end_date: String,
     pub current_job: bool,
-    pub projects: Vec<&'a Project>,
+    pub projects: Vec<u64>,
 }
 
 pub enum ExternalLink {

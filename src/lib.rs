@@ -12,8 +12,10 @@ pub async fn run() {
     let app = create_routes();
     let addr = SocketAddr::from(([0, 0, 0, 0], 3000));
 
-    let importer: Box<dyn CareerImporter> = Box::new(Importer::new("portfolio.json".to_owned()));
+    let importer: Box<dyn CareerImporter> = Box::new(Importer::new("data/portfolio.json".to_owned()));
+    let c = importer.import();
 
+    print!("Start Server");
     axum::Server::bind(&addr)
         .serve(app.into_make_service())
         .await
