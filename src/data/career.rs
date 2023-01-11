@@ -1,3 +1,6 @@
+pub use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize)]
 pub struct Career {
     pub projects: Vec<Project>,
     pub experiences: Vec<Experience>,
@@ -11,6 +14,7 @@ pub trait CareerExporter {
     fn export(&self, career: &Career) -> String;
 }
 
+#[derive(Serialize, Deserialize)]
 pub struct Project {
     pub id: u64,
     pub name: String,
@@ -18,6 +22,7 @@ pub struct Project {
     pub links: Vec<ExternalLink>,
 }
 
+#[derive(Serialize, Deserialize)]
 pub struct Experience {
     pub name: String,
     pub description: String,
@@ -27,6 +32,7 @@ pub struct Experience {
     pub projects: Vec<u64>,
 }
 
+#[derive(Serialize, Deserialize)]
 pub enum ExternalLink {
     Image { url: String },
     YoutubeVideo { url: String },

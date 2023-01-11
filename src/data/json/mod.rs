@@ -1,4 +1,4 @@
-mod exporter;
+pub mod exporter;
 pub mod importer;
 
 pub const KEY_CAREER_PROJECTS: &str = "CareerProjects";

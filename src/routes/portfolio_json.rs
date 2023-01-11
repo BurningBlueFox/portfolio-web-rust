@@ -1,5 +1,7 @@
 use axum::Json;
 
-pub async fn portfolio_json() -> Json<&'static str> {
-    Json("")
+use crate::set_data;
+
+pub async fn portfolio_json() -> Json<String> {
+    Json(set_data())
 }
